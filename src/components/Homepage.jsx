@@ -9,7 +9,7 @@ import { Cryptocurrencies, News } from '../components'
 const { Title } = Typography;
 
 const Homepage = () => {
-  const { data, isFetching } = useGetCryptosQuery();
+  const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
 
   console.log(data);
@@ -35,7 +35,7 @@ const Homepage = () => {
               Top 10 Cryptocurrencies in the world
             </Title>
             <Title level={3} className="show-more">
-                <Link to='/cryprocurrencies'>
+                <Link to="./cryptocurrencies">
                   Show More
                 </Link>
             </Title>
@@ -47,7 +47,7 @@ const Homepage = () => {
               Latest Crypto News
             </Title>
             <Title level={3} className="show-more">
-                <Link to='/news'>
+                <Link to="./news">
                   Show More
                 </Link>
             </Title>
