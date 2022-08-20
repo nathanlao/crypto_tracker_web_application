@@ -301,7 +301,7 @@ a:hover{
     justify-content: space-between !important;
 }
 .news-title{
-width: 70%;
+width: 90%;
 }
 
 .news-image-container .img{
@@ -313,6 +313,7 @@ width: 70%;
     margin: 10px 0px !important;
 }
 .provider-container{
+    font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
 }
