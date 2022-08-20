@@ -10,7 +10,7 @@ const { Option } = Select;
 const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
 
 const News = ( {simplified} ) => {
-  const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory: 'Cryptocurrency', count: simplified ? 6 : 12});
+  const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory: 'Crypto', count: simplified ? 6 : 12});
 
   console.log(cryptoNews);
 
