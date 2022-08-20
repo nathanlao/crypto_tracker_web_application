@@ -21,10 +21,12 @@ const Cryptocurrencies = ( {simplified} ) => {
               <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency.id}>
                 <Link to={`/crypto/${currency.id}`}>
                   <Card 
-                    title={`${currency.rank}. ${currency.name}`}
-                    extra={<img className="crypto-image" src={currency.iconUrl} />}
                     hoverable
-                  >
+                    title={`${currency.rank}. ${currency.name}`}
+                    extra={<img className="crypto-image" src={currency.iconUrl} />} // content(icon) to the top right of the card
+                    headStyle={{ backgroundColor: '#5c6cfa', color: '#ffffff', fontFamily:'Monaco'}}
+                    bodyStyle={{ backgroundColor: '#a9bbff', fontFamily:'Monaco'}}
+                  > 
                     <p>Price: {millify(currency.price)}</p>
                     <p>Market Cap: {millify(currency.marketCap)}</p>
                     <p>Daily Change: {millify(currency.change)}%</p>
