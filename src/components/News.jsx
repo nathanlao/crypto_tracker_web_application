@@ -56,7 +56,7 @@ const News = ( {simplified} ) => {
             </a> 
           </Card>
         </Col>
-      ))};
+      ))}
     </Row>
   );
 }
