@@ -64,7 +64,7 @@ const CryptoDetails = () => {
                         <Title level={3} className="coin-details-heading">
                             {cryptoDetails?.name} Value Statistics
                         </Title>
-                        <p>
+                        <p style={{fontFamily:'Comic Sans MS'}}>
                             An overview showing the stats of {cryptoDetails?.name}
                         </p>
                     </Col>
@@ -80,10 +80,10 @@ const CryptoDetails = () => {
                   </Col>
                   <Col className="other-stats-info">
                     <Col className="coin-value-statistics-heading">
-                        <Title level={3} className="coin-details-heading">
+                        <Title level={3} className="coin-details-heading" >
                             Other Statistics Information
                         </Title>
-                        <p>
+                        <p style={{fontFamily:'Comic Sans MS'}}>
                             An overview showing the stats of all cryptocurrencies
                         </p>
                     </Col>
