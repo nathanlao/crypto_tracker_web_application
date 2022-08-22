@@ -38,7 +38,7 @@ const App = () => {
                     Crypto Tracker <br />
                     All rights reserved
                 </Typography.Title>
-                <Space>
+                <Space style={{fontFamily:'Comic Sans MS'}}>
                     <Link to="/">Home</Link>
                     <Link to="/exchanges">Exchanges</Link>
                     <Link to="/news">News</Link>
