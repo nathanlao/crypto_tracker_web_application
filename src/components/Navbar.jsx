@@ -28,22 +28,22 @@ const Navbar = () => {
                 <Link to="/news">News</Link>
             </Menu.Item>
         </Menu>      */}
-        <Button type="default" style={{ background: "#a9bbff", borderColor: "#a9bbff" }} icon={<HomeOutlined />} shape="round" block>
+        <Button type="link" style={{ color: 'white' }} icon={<HomeOutlined />} shape="round" block>
             <Link to="/">   Home</Link>
         </Button>
         <br />
         <br />
-        <Button type="default" style={{ background: "#a9bbff", borderColor: "#a9bbff" }} icon={<FundOutlined />} shape="round" block>
+        <Button type="link" style={{ color: 'white' }} icon={<FundOutlined />} shape="round" block>
             <Link to="/Cryptocurrencies">   Cryptocurrencies</Link>
         </Button>
         <br />
         <br />
-        <Button type="default" style={{ background: "#a9bbff", borderColor: "#a9bbff" }} icon={<MoneyCollectOutlined />} shape="round" block>
+        <Button type="link" style={{ color: 'white' }} icon={<MoneyCollectOutlined />} shape="round" block>
             <Link to="/exchanges">   Exchanges</Link>
         </Button>
         <br />
         <br />
-        <Button type="default" style={{ background: "#a9bbff", borderColor: "#a9bbff" }} icon={<BulbOutlined />} shape="round" block>
+        <Button type="link" style={{ color: 'white' }} icon={<BulbOutlined />} shape="round" block>
             <Link to="/news">   News</Link>
         </Button>
     </div>
