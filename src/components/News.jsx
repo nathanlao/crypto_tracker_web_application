@@ -54,7 +54,7 @@ const News = ( {simplified} ) => {
                 <Title level={4} className="news-title">
                   {news.name}
                 </Title>
-                <img stytle={{maxWidth: '200px', maxHeight: '100px'}} src={news?.image?.thumbnail?.contentUrl || demoImage } alt="news" />
+                <img style={{maxWidth: '200px', maxHeight: '100px'}} src={news?.image?.thumbnail?.contentUrl || demoImage } alt="news" />
               </div>
               <p>
                 {news.description > 100 
