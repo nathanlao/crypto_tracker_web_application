@@ -81,7 +81,7 @@ const CryptoDetails = () => {
                   <Col className="other-stats-info">
                     <Col className="coin-value-statistics-heading">
                         <Title level={3} className="coin-details-heading">
-                            Other Statistics
+                            Other Statistics Information
                         </Title>
                         <p>
                             An overview showing the stats of all cryptocurrencies
