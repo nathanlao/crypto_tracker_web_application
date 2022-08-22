@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link to="/">Crypto Tracker</Link> 
             </Typography.Title>
         </div>
-        <Menu theme="dark">
+        {/* <Menu theme="dark">
             <Menu.Item icon={<HomeOutlined />}>
                 <Link to="/">Home</Link>
             </Menu.Item>
@@ -27,7 +27,25 @@ const Navbar = () => {
             <Menu.Item icon={<BulbOutlined />}>
                 <Link to="/news">News</Link>
             </Menu.Item>
-        </Menu>     
+        </Menu>      */}
+        <Button type="default" icon={<HomeOutlined />} shape="round" block>
+            <Link to="/">   Home</Link>
+        </Button>
+        <br />
+        <br />
+        <Button type="default" icon={<FundOutlined />} shape="round" block>
+            <Link to="/Cryptocurrencies">   Cryptocurrencies</Link>
+        </Button>
+        <br />
+        <br />
+        <Button type="default" icon={<MoneyCollectOutlined />} shape="round" block>
+            <Link to="/exchanges">   Exchanges</Link>
+        </Button>
+        <br />
+        <br />
+        <Button type="default" icon={<BulbOutlined />} shape="round" block>
+            <Link to="/news">   News</Link>
+        </Button>
     </div>
   );
 }
