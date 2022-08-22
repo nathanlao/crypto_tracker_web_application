@@ -39,8 +39,8 @@ const Cryptocurrencies = ( {simplified} ) => {
                     hoverable
                     title={`${currency.rank}. ${currency.name}`}
                     extra={<img className="crypto-image" src={currency.iconUrl} />} // content(icon) to the top right of the card
-                    headStyle={{ backgroundColor: '#5c6cfa', color: '#ffffff', fontFamily:'Monaco'}}
-                    bodyStyle={{ backgroundColor: '#a9bbff', fontFamily:'Monaco'}}
+                    headStyle={{ backgroundColor: '#130F40', color: '#ffffff', fontFamily:'Comic Sans MS'}}
+                    bodyStyle={{ backgroundColor: '#a9bbff', fontFamily:'Comic Sans MS'}}
                   > 
                     <p>Price: {millify(currency.price)}</p>
                     <p>Market Cap: {millify(currency.marketCap)}</p>
