@@ -3,7 +3,7 @@
     --text-primary:#000;
     --bgPrimary:#fff;
    --bgSecondary: #F9F9F9;
-   --pink: #0071bd;
+   --pink: #130F40;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
 }
@@ -58,7 +58,7 @@ a:hover{
     margin:0 0 0 15px;
 }
 .logo a{
-   color: white;
+   color: #a9bbff;
 }
 .menu-control-container{
     display: none !important;
