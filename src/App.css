@@ -5,7 +5,7 @@
    --bgSecondary: #F9F9F9;
    --pink: #3ccdf9;
    --light-blue: #e6f7ff;
-   --border: #d9d9d9;
+   --border: #a3b1f8;
    --stats: #291cb9;
 }
 
@@ -138,7 +138,7 @@ a:hover{
 }
 
 .coin-detail-container{
-    margin: 30px;
+    margin: 80px;
 }
 
 .coin-heading-container{
@@ -246,6 +246,7 @@ a:hover{
 }
 
 .coin-link{
+    font-family: 'Comic Sans MS';
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -259,7 +260,7 @@ a:hover{
 }
 
 .coin-link a{
-    color: var(--pink);
+    color: var(--stats);
     font-weight: 700;
     font-size: 1rem;
 }
