@@ -18,7 +18,6 @@ const CryptoDetails = () => {
   const { data, isFetching } = useGetCryptoDetailsQuery(coinID);
   const cryptoDetails = data?.data?.coin;
 
-
   console.log(data);
 
   if (isFetching) {
