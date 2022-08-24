@@ -7,7 +7,9 @@ import { Row, Col, Typography, Select } from 'antd';
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, 
          TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
 
-import { useGetCryptoDetailsQuery} from '../services/cryptoAPI';
+import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery} from '../services/cryptoAPI';
+
+import LineChart from './LineChart';
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -16,6 +18,7 @@ const CryptoDetails = () => {
   const { coinID } = useParams(); // take the id of the url as variables
   const [timePeriod, setTimePeriod] = useState("7d");
   const { data, isFetching } = useGetCryptoDetailsQuery(coinID);
+  const { data: coinHistory} = useGetCryptoHistoryQuery( {coinID, timePeriod} );
   const cryptoDetails = data?.data?.coin;
 
   console.log(data);
@@ -61,7 +64,9 @@ const CryptoDetails = () => {
             >
               {time.map((date) => <Option key={date}>{date}</Option> )}
             </Select>
-            {/* line chart */}
+
+            <LineChart coinHistory= {coinHistory} currentPrice={millify(cryptoDetails.price)} coinName={cryptoDetails.name}/>
+
             <Col className="stats-container">
                 <Col className="coin-value-statistics">
                     <Col className="coin-value-statistics-heading">
