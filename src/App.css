@@ -333,10 +333,11 @@ a:hover{
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    color: #0071bd;
+    color: #291cb9;
 }
 .chart-title{
-    color: #0071bd !important;
+    font-family: 'Comic Sans MS';
+    color: #291cb9 !important;
 }
 .price-container{
     display: flex !important;
