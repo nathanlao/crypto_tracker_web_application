@@ -55,4 +55,4 @@ const Cryptocurrencies = ( {simplified} ) => {
   );
 }
 
-export default Cryptocurrencies
+export default Cryptocurrencies;
