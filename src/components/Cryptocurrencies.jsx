@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Card, Row, Col, Input } from 'antd';
 
 import { useGetCryptosQuery } from '../services/cryptoAPI';
+import Loader from './Loader';
 
 const Cryptocurrencies = ( {simplified} ) => {
   const count = simplified ? 10 : 100; // simplified is true, then set count to 10
@@ -20,7 +21,7 @@ const Cryptocurrencies = ( {simplified} ) => {
   }, [cryptosList, searchTerm]); // useEffect() whenever cryptosList/searchTerm get changed
 
   if (isFetching) {
-    return 'Loading...';
+    return <Loader />;
   }
 
   return (
