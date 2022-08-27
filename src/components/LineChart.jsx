@@ -9,11 +9,14 @@ const LineChart = ( {coinHistory, currentPrice, coinName} ) => {
     const coinPrice = [];
     const coinTimestamp = [];
 
+
+    // Have to registe element in the "react-chartjs-2" version of "^4.0.1" and "chart.js" "^3.7.0"
     for (let i = 0; i < coinHistory?.data?.history?.length; i++) {
-        coinTimestamp.push(
-          new Date(coinHistory?.data?.history[i].timestamp).toLocaleDateString()
+        // use unshift to sort dates, * 1000 gives the correct date
+        coinTimestamp.unshift(
+          new Date(coinHistory?.data?.history[i].timestamp * 1000).toLocaleDateString()
         );
-        coinPrice.push(coinHistory?.data?.history[i].price);
+        coinPrice.unshift(coinHistory?.data?.history[i].price);
       }
 
     const data = {
