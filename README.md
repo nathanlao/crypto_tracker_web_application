@@ -1,5 +1,7 @@
 # crypto_tracker
 
+## How to Run?
+
 In the project directory, you can run:
 
 ### `npm start`
