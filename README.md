@@ -4,14 +4,11 @@ A web application that allows you to view statistics of cryptocurrencies
 
 ## How to Run
 
-- Runs the app in the development mode.\
-In the project directory, you can run:
-
-### `npm start`
-
+1. Runs the app in the development mode.\
+In the project directory, you can run: `npm start`\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- This project has been deployed on Netlify.com.\
+2. This project has been deployed on Netlify.com.\
 You can also simply open [https://coolcryptotracker.netlify.app](https://coolcryptotracker.netlify.app/) to view it in your browser.
 
 ## Issues
