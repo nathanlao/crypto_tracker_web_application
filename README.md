@@ -1,6 +1,16 @@
 # Crypto Tracker
 
 A web application that allows you to view statistics of cryptocurrencies
+<p align="center">
+<img width="600" alt="Screen Shot 2022-09-06 at 1 43 02 PM" src="https://user-images.githubusercontent.com/75557717/188703824-3ed0efa2-3cbe-44fc-975a-1448c7996026.png">
+
+<img width="600" alt="Screen Shot 2022-09-06 at 1 43 36 PM" src="https://user-images.githubusercontent.com/75557717/188704348-25feb5dd-6b0e-4b36-81ed-284269e54e0d.png">
+
+<img width="600" alt="Screen Shot 2022-09-06 at 1 43 23 PM" src="https://user-images.githubusercontent.com/75557717/188704488-c13a774c-780e-46ce-bc3a-c6a4350c2d00.png">
+
+</p>
+
+
 
 ## How to Run
 
